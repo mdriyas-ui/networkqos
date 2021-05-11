@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/reguser1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="username" />
+
+        <EditText
+            android:id="@+id/regpass1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reguser1"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="password"
+            android:password="true" />
+
+        <EditText
+            android:id="@+id/regconfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/regpass1"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="confirm"
+            android:password="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <ProgressBar
+            android:id="@+id/regpb"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/regconfirm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/regemailadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/regconfirm"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+             />
+
+        <Button
+            android:id="@+id/regsub"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Submit" />
+
+</RelativeLayout>

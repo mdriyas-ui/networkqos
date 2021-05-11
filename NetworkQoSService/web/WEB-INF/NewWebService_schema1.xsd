@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://networkqos.com/" xmlns:tns="http://networkqos.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="mobileinfo" type="tns:mobileinfo"/>
+
+  <xs:element name="mobileinfoResponse" type="tns:mobileinfoResponse"/>
+
+  <xs:element name="signin" type="tns:signin"/>
+
+  <xs:element name="signinResponse" type="tns:signinResponse"/>
+
+  <xs:element name="signup" type="tns:signup"/>
+
+  <xs:element name="signupResponse" type="tns:signupResponse"/>
+
+  <xs:complexType name="signup">
+    <xs:sequence>
+      <xs:element name="username" type="xs:string" minOccurs="0"/>
+      <xs:element name="password" type="xs:string" minOccurs="0"/>
+      <xs:element name="email" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="signupResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mobileinfo">
+    <xs:sequence>
+      <xs:element name="bandwidth" type="xs:string" minOccurs="0"/>
+      <xs:element name="networkname" type="xs:string" minOccurs="0"/>
+      <xs:element name="phonetype" type="xs:string" minOccurs="0"/>
+      <xs:element name="simstate" type="xs:string" minOccurs="0"/>
+      <xs:element name="networktype" type="xs:string" minOccurs="0"/>
+      <xs:element name="osversion" type="xs:string" minOccurs="0"/>
+      <xs:element name="username" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mobileinfoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="signin">
+    <xs:sequence>
+      <xs:element name="username" type="xs:string" minOccurs="0"/>
+      <xs:element name="password" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="signinResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
